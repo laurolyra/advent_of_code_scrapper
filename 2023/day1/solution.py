@@ -3,7 +3,6 @@ file1 = open('lines.txt', 'r')
 lines = file1.readlines()
 
 line = lines[0]
-line_proto = [lines[0], lines[1], lines[2]]
 
 inc = 0
 
