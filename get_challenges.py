@@ -35,7 +35,8 @@ def create_md(file_title, file_content, url):
     md_file = open(path_to_md + '/' + file_title['title'] + '.md', "w+")
     md_text = md(file_content, strong_em_symbol="**")
     md_file.write(md_text + 'Source: ' + url)
-    print("File ready. Check the question in " + file_title['title'] + ".md and happy coding!")
+    print("File ready. Now, go to " + path_to_md +
+          '/' + file_title['title'] + ".md and happy coding!")
 
 
 def fetch_challenge_text(url, year):
@@ -55,7 +56,7 @@ def choose_day(year):
         choice = input("Choose a day to fetch: ")
 
         if choice.isdigit() == False:
-            print("Please write only numbers")
+            print("Please write only numbers: ")
         else:
             return fetch_challenge_text('https://adventofcode.com/' + year + '/day/' + choice, year)
 
