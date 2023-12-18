@@ -22,7 +22,7 @@ Then, this script will try to fetch the challenge for that day using `requests` 
 
 If the response is successfull, the script, using `Selector` from `parsel` library, will obtain the main text and the title of the challenge, wich will be useful to create some file info and path to create the Markdown file.
 
-By default, MDs are generated on the following directory: `./[year]/day[day]/[challenge-title].md` - which is created when it is executed without overwritting existing files/direcrories if any.
+By default, MDs are generated on the following directory: `./[year]/day[day]/[challenge-title].md`, like the one included on this repo - which is created when it is executed without overwritting existing files/direcrories if any.
 
 ### Possible improvements
 - Test coverage;
