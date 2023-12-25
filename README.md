@@ -1,4 +1,4 @@
-## Scrapper for Advent of code's challenges
+## Scrapper for Advent of Code's challenges
 
 ### What's been done here
 This project consists in a interactive scrapper to [advent of code's](https://adventofcode.com/) daily challenges, taking its text and saving into an .md file.
@@ -23,6 +23,9 @@ Then, this script will try to fetch the challenge for that day using `requests` 
 If the response is successfull, the script, using `Selector` from `parsel` library, will obtain the main text and the title of the challenge, wich will be useful to create some file info and path to create the Markdown file.
 
 By default, MDs are generated on the following directory: `./[year]/day[day]/[challenge-title].md`, like the one included on this repo - which is created when it is executed without overwritting existing files/direcrories if any.
+
+### Scrapping your input
+After choosing year and day, there's a third input, offering to fetch user's custom input. If you want to do so, go to advent of code's site, log in, check your cookies, copy the value of `session` cookie, paste it on terminal input and hit enter. Doing this, the script will fetch both the question and input in a separate `input.txt` file.
 
 ### Possible improvements
 - Test coverage;

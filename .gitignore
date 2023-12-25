@@ -9,3 +9,4 @@ __pycache__/
 
 # VSCode repo settings
 .vscode
+session_cookie.txt
