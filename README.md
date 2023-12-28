@@ -27,6 +27,8 @@ By default, MDs are generated on the following directory: `./[year]/day[day]/[ch
 ### Scrapping your input
 After choosing year and day, there's a third input, offering to fetch user's custom input. If you want to do so, go to advent of code's site, log in, check your cookies, copy the value of `session` cookie, paste it on terminal input and hit enter. Doing this, the script will fetch both the question and input in a separate `input.txt` file.
 
+_P.S.: you may create a file named `session_cookie.txt` and paste your cookie there - this file is listed in project's `.gitignore`._
+
 ### Possible improvements
 - Test coverage;
 - A third option that allows user to select a programming language and, after fetching and creating the directories, create an empty file like `solution.js` or `solution.py`;
